@@ -372,9 +372,6 @@ template {
     left: 5px; }
 
 main {
-  width: 255px;
-  height: 4020px;
-  margin: 0 auto;
   font-family: "Trebuchet MS", serif;
   font-size: 1em; }
 
@@ -435,9 +432,6 @@ main {
       font-style: italic; }
 
 .feminino {
-  width: 248px;
-  height: 2100px;
-  margin: auto;
   text-align: center; }
   .feminino__produtos-item {
     list-style: none; }
@@ -476,9 +470,6 @@ main {
     margin-bottom: 10px; }
 
 .masculino {
-  width: 248px;
-  height: 2100px;
-  margin: auto;
   text-align: center; }
   .masculino__produtos-item {
     list-style: none; }
@@ -518,33 +509,31 @@ main {
 
 footer {
   background-color: #333259;
-  height: 1330px;
-  margin: 0 -32.5px;
+  width: 100vw;
   color: white;
   position: relative; }
   footer .logo {
     padding-top: 15px; }
     footer .logo__image {
-      width: 250px;
+      width: 220px;
       height: auto;
       display: block;
       margin: 20px auto; }
   footer .bloco1 {
-    width: 236px;
     height: 190px;
     text-align: center;
     margin: auto; }
     footer .bloco1__newsletter {
-      width: 240px;
       height: 240px;
       border-bottom: 1.5px solid black; }
       footer .bloco1__newsletter-title {
         font-size: 20px;
         text-align: center;
-        margin: 16px; }
+        margin-top: 16px;
+        margin-bottom: 16px; }
       footer .bloco1__newsletter-subtitle {
         font-size: 1em;
-        margin: 10px; }
+        padding: 15px; }
       footer .bloco1__newsletter-input {
         width: 240px;
         height: 20px;
@@ -572,10 +561,9 @@ footer {
       footer .bloco1__newsletter-btn-cad:hover {
         color: rgba(255, 255, 255, 0.6); }
     footer .bloco1__redes {
-      width: 280px;
+      width: 100vw;
       height: 120px;
       margin-top: 20px;
-      margin-left: -24px;
       padding-bottom: 80px;
       border-bottom: 1.5px solid black; }
       footer .bloco1__redes-title {
@@ -613,9 +601,7 @@ footer {
         footer .bloco1__redes-face-txt::before {
           content: ' - '; }
   footer .bloco2 {
-    width: 230px;
     height: 640px;
-    margin-left: 25px;
     position: relative; }
     footer .bloco2 h2 {
       font-size: 30px;
@@ -635,22 +621,20 @@ footer {
       position: absolute;
       top: 300px; }
     footer .bloco2__sobre {
-      width: 140px;
       height: 140px;
       position: absolute;
       top: 540px;
       margin-top: 60px; }
     footer .bloco2__privacidade {
-      width: 180px;
       height: 140px;
       position: absolute;
       top: 725px;
       margin-top: 60px; }
   footer .foot {
-    width: 320px;
+    width: 100vw;
     height: 20px;
     background-color: #4369D9;
-    font-size: 14px;
+    font-size: 13px;
     position: absolute;
     top: 1330px; }
     footer .foot a {

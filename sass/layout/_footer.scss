@@ -1,16 +1,16 @@
 footer{
     // clear: both;
     background-color: $cor0;
-    height: 1330px;
-    margin: 0 -32.5px;
+    width: 100vw;
     color: white;
     position: relative;
+
 
     .logo {
         padding-top: 15px;
 
         &__image{
-            width: 250px;
+            width: 220px;
             height: auto;
             display: block;
             margin: 20px auto;
@@ -18,24 +18,23 @@ footer{
     }
 
     .bloco1{
-        width: 236px;
         height: 190px;
         text-align: center;
         margin: auto;
 
         &__newsletter{
-            width: 240px;
             height: 240px;
             border-bottom: 1.5px solid black;
 
             &-title{
                 font-size: 20px;
                 text-align: center;
-                margin: 16px;
+                margin-top: 16px;
+                margin-bottom: 16px;
             }
             &-subtitle{
                 font-size: 1em;
-                margin: 10px;
+                padding: 15px;
             }
             &-input{
                 width: 240px;
@@ -72,10 +71,9 @@ footer{
         }
 
         &__redes{
-            width: 280px;
+            width: 100vw;
             height: 120px;
             margin-top: 20px;
-            margin-left: -24px;
             padding-bottom: 80px;
             border-bottom: 1.5px solid black;
 
@@ -132,9 +130,9 @@ footer{
     }
 
     .bloco2{
-        width: 230px;
+        //width: 230px;
         height: 640px;
-        margin-left: 25px;
+        //margin-left: 25px;
         position: relative;
 
         & h2{
@@ -166,7 +164,7 @@ footer{
         }
         
         &__sobre{
-            width: 140px;
+            //width: 140px;
             height: 140px;
             position: absolute;
             top: 540px;
@@ -174,7 +172,7 @@ footer{
         }
 
         &__privacidade{
-            width: 180px;
+            //width: 180px;
             height: 140px;
             position: absolute;
             top: 725px;
@@ -184,10 +182,10 @@ footer{
     }
 
     .foot {
-        width: 320px;
+        width: 100vw;
         height: 20px;
         background-color: $cor4;
-        font-size: 14px;
+        font-size: 13px;
         position: absolute;
         top: 1330px;
 
