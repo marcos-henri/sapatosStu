@@ -1,0 +1,12 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    transition: all 200ms ease-in-out;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.2);
+    background-color: $cor2-trans;
+    border-radius: 10px;
+}

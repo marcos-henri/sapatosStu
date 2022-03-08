@@ -1,0 +1,23 @@
+// ABSTRACTS
+
+@import 'abstracts/_breakpoints';
+@import 'abstracts/_cores';
+
+// BASE
+@import 'base/_normalize';
+@import 'base/_fonts';
+@import 'base/_my-reset';
+
+// COMPONENTS
+@import 'components/_btn';
+
+//LAYOUT 
+@import 'layout/_cabecalho';
+@import 'layout/_main';
+@import 'layout/_nav';
+@import 'layout/_feminino';
+@import 'layout/_masculino';
+@import 'layout/_footer';
+
+
+//PAGES

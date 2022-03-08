@@ -1,0 +1,70 @@
+.cabecalho {
+    position: relative;
+    height: 100px;
+    background: $cor0;
+
+    .logo{
+        position: absolute;
+        top: 20px;
+        width: 250px;
+        height: auto;
+    }
+
+    &__btn{
+        display: block;
+        width: 35px;
+        height: 35px;
+        background-color: $cor4;
+        background: url('../../images/icones/menuprincipal-btn-bg.png');
+        background-repeat: no-repeat;
+        border: 1px solid $cor4;
+        border-radius: 5px;
+        cursor: pointer;
+
+        position: absolute;
+        top: 7px;
+        right: 7px;
+    }
+
+    &__lista{
+        display: none;
+        list-style: none;
+        position: absolute;
+        background-image: url('../../images/icones/menuprincipal-btn-bg.png');
+        background-repeat: no-repeat;
+        background-position: -53px 2px;
+        width: 35px;
+        height: 100px;
+        top: 7px;
+        right: 7px;
+        background-color: $cor4;
+        border-radius: 5px;
+        border: 1.5px solid $cor2;
+    }
+
+    &__item-user > img{   
+    width: 25px;
+    height: auto;
+    }
+
+    &__item-user{
+        position: absolute;
+        top: 35px;
+        left: 5px;
+    }
+
+    &__item-sacola > img{   
+        width: 25px;
+        height: auto;
+    }
+
+    &__item-sacola{
+        position: absolute;
+        top: 68px;
+        left: 5px;
+    }
+
+    // &__lista--fechado{
+    //     display: none;
+    // }
+}
