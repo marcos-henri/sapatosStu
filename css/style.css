@@ -509,138 +509,117 @@ main {
 
 footer {
   background-color: #333259;
-  width: 100vw;
   color: white;
-  position: relative; }
+  font-family: "Trebuchet MS", serif; }
   footer .logo {
-    padding-top: 15px; }
+    padding-top: 25px;
+    padding-bottom: 25px; }
     footer .logo__image {
-      width: 220px;
+      width: 300px;
       height: auto;
       display: block;
-      margin: 20px auto; }
-  footer .bloco1 {
-    height: 190px;
+      margin: 0 auto; }
+  footer .bloco1__newsletter-title {
+    width: 220px;
+    font-size: 1.4em;
+    font-weight: bold;
     text-align: center;
-    margin: auto; }
-    footer .bloco1__newsletter {
-      height: 240px;
-      border-bottom: 1.5px solid black; }
-      footer .bloco1__newsletter-title {
-        font-size: 20px;
-        text-align: center;
-        margin-top: 16px;
-        margin-bottom: 16px; }
-      footer .bloco1__newsletter-subtitle {
-        font-size: 1em;
-        padding: 15px; }
-      footer .bloco1__newsletter-input {
-        width: 240px;
-        height: 20px;
-        background-color: transparent;
-        border: 2.5px solid #1F1F26;
-        border-radius: 4px;
-        margin-top: 20px;
-        margin-bottom: 20px; }
-        footer .bloco1__newsletter-input::-webkit-input-placeholder {
-          font-family: "Trebuchet MS", serif;
-          font-style: italic; }
-        footer .bloco1__newsletter-input::-moz-placeholder {
-          font-family: "Trebuchet MS", serif;
-          font-style: italic; }
-      footer .bloco1__newsletter-btn-cad {
-        width: 95px;
-        height: 35px;
-        background-color: transparent;
-        border: 2px solid #1F1F26;
-        border-radius: 14px;
-        color: white;
-        font-style: italic;
-        cursor: pointer;
-        transition: all 100ms ease-in; }
-      footer .bloco1__newsletter-btn-cad:hover {
-        color: rgba(255, 255, 255, 0.6); }
-    footer .bloco1__redes {
-      width: 100vw;
-      height: 120px;
-      margin-top: 20px;
-      padding-bottom: 80px;
-      border-bottom: 1.5px solid black; }
-      footer .bloco1__redes-title {
-        font-size: 22px;
-        margin-bottom: 20px; }
-      footer .bloco1__redes > ul {
-        list-style: none; }
-        footer .bloco1__redes > ul > a {
-          color: white;
-          text-decoration: none; }
-      footer .bloco1__redes-insta {
-        position: relative; }
-        footer .bloco1__redes-insta-img {
-          width: 25px;
-          position: absolute;
-          left: 3px;
-          top: 5px; }
-        footer .bloco1__redes-insta-txt {
-          position: absolute;
-          left: 35px;
-          top: 10px; }
-        footer .bloco1__redes-insta-txt::before {
-          content: ' - '; }
-      footer .bloco1__redes-face {
-        position: relative; }
-        footer .bloco1__redes-face-img {
-          width: 25px;
-          position: absolute;
-          left: 3px;
-          top: 50px; }
-        footer .bloco1__redes-face-txt {
-          position: absolute;
-          left: 35px;
-          top: 56px; }
-        footer .bloco1__redes-face-txt::before {
-          content: ' - '; }
-  footer .bloco2 {
-    height: 640px;
+    margin: 0 auto;
+    padding-bottom: 10px; }
+  footer .bloco1__newsletter-subtitle {
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 20px; }
+  footer .bloco1__newsletter-input {
+    width: 240px;
+    height: 20px;
+    display: block;
+    margin: 0 auto 20px auto;
+    background-color: transparent;
+    border: 1px solid #1F1F26;
+    border-radius: 4px; }
+    footer .bloco1__newsletter-input::-webkit-input-placeholder {
+      color: white;
+      opacity: 35%;
+      font-style: italic;
+      text-align: center; }
+    footer .bloco1__newsletter-input::-moz-placeholder {
+      color: white;
+      opacity: 35%;
+      font-style: italic;
+      text-align: center; }
+  footer .bloco1__newsletter-btn-cad {
+    width: 95px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #1F1F26;
+    border-radius: 14px;
+    color: white;
+    font-style: italic;
+    display: block;
+    margin: 0 auto 60px auto; }
+  footer .bloco1__redes ul {
+    list-style: none; }
+  footer .bloco1__redes a {
+    color: white;
+    text-decoration: none; }
+  footer .bloco1__redes p {
+    font-size: 1em; }
+  footer .bloco1__redes p::before {
+    content: ' - '; }
+  footer .bloco1__redes img {
+    width: 25px; }
+  footer .bloco1__redes-title {
+    font-size: 22px;
+    text-align: center; }
+  footer .bloco1__redes-insta {
+    padding: 10px;
     position: relative; }
-    footer .bloco2 h2 {
-      font-size: 30px;
-      margin-bottom: 40px; }
+    footer .bloco1__redes-insta-txt {
+      position: absolute;
+      top: 15px;
+      left: 40px; }
+  footer .bloco1__redes-face {
+    padding: 10px;
+    position: relative;
+    margin-bottom: 45px; }
+    footer .bloco1__redes-face-txt {
+      position: absolute;
+      top: 15px;
+      left: 40px; }
+  footer .bloco1__separacao {
+    width: 280px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: black; }
+  footer .bloco2 {
+    padding-bottom: 100px; }
     footer .bloco2 ul {
       list-style: none; }
-    footer .bloco2 li {
-      margin-bottom: 20px; }
     footer .bloco2 a {
-      text-decoration: none;
-      color: white; }
-    footer .bloco2 a::before {
-      content: '> ';
-      color: #4369D9; }
-    footer .bloco2__ajuda {
-      height: 250px;
-      position: absolute;
-      top: 300px; }
-    footer .bloco2__sobre {
-      height: 140px;
-      position: absolute;
-      top: 540px;
-      margin-top: 60px; }
-    footer .bloco2__privacidade {
-      height: 140px;
-      position: absolute;
-      top: 725px;
-      margin-top: 60px; }
-  footer .foot {
-    width: 100vw;
-    height: 20px;
-    background-color: #4369D9;
-    font-size: 13px;
-    position: absolute;
-    top: 1330px; }
-    footer .foot a {
-      text-decoration: none;
       color: white;
-      transition: all 200ms ease-in-out; }
-    footer .foot a:hover {
-      text-decoration: underline;
-      opacity: 80%; }
+      text-decoration: none;
+      line-height: 35px; }
+    footer .bloco2 a:hover {
+      text-decoration: underline; }
+    footer .bloco2 li::before {
+      content: ' > ';
+      color: #4369D9; }
+    footer .bloco2 h2 {
+      margin-bottom: 40px; }
+    footer .bloco2__ajuda {
+      width: 185px;
+      margin: 40px auto 60px auto; }
+    footer .bloco2__sobre {
+      width: 185px;
+      margin: 0 auto 60px auto; }
+    footer .bloco2__privacidade {
+      width: 185px;
+      margin: 0 auto 60px auto; }
+  footer .foot {
+    background-color: #4369D9; }
+    footer .foot p {
+      font-size: 0.82em;
+      text-align: center; }
+    footer .foot a {
+      color: white; }

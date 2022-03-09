@@ -1,202 +1,161 @@
 footer{
     // clear: both;
     background-color: $cor0;
-    width: 100vw;
     color: white;
-    position: relative;
+    font-family: $fonte0;
+    //position: relative;
 
 
     .logo {
-        padding-top: 15px;
+        padding-top: 25px;
+        padding-bottom: 25px;
 
         &__image{
-            width: 220px;
+            width: 300px;
             height: auto;
             display: block;
-            margin: 20px auto;
+            margin: 0 auto;
         }
     }
 
     .bloco1{
-        height: 190px;
-        text-align: center;
-        margin: auto;
-
         &__newsletter{
-            height: 240px;
-            border-bottom: 1.5px solid black;
-
             &-title{
-                font-size: 20px;
+                width: 220px;
+                font-size: 1.4em;
+                font-weight: bold;
                 text-align: center;
-                margin-top: 16px;
-                margin-bottom: 16px;
+                margin: 0 auto;
+                padding-bottom: 10px;
             }
             &-subtitle{
                 font-size: 1em;
-                padding: 15px;
+                text-align: center;
+                padding-bottom: 20px;
             }
             &-input{
                 width: 240px;
                 height: 20px;
+                display: block;
+                margin: 0 auto 20px auto;
                 background-color: transparent;
-                border: 2.5px solid $cor2;
+                border: 1px solid $cor2;
                 border-radius: 4px;
-                margin-top: 20px;
-                margin-bottom: 20px;
+                
                 &::-webkit-input-placeholder{
-                    font-family: $fonte0;
+                    color: white;
+                    opacity: 35%;
                     font-style: italic;
+                    text-align: center;
                 }
                 &::-moz-placeholder{
-                    font-family: $fonte0;
+                    color: white;
+                    opacity: 35%;
                     font-style: italic;
+                    text-align: center;
                 }
             }
-
             &-btn-cad{
                 width: 95px;
                 height: 35px;
                 background-color: transparent;
-                border: 2px solid $cor2;
+                border: 1px solid $cor2;
                 border-radius: 14px;
                 color: white;
                 font-style: italic;
-                cursor: pointer;
-                transition: all 100ms ease-in;
-            }
-            &-btn-cad:hover{
-                color: rgba(255, 255, 255, 0.6);
+                display: block;
+                margin: 0 auto 60px auto;
             }
         }
-
         &__redes{
-            width: 100vw;
-            height: 120px;
-            margin-top: 20px;
-            padding-bottom: 80px;
-            border-bottom: 1.5px solid black;
-
+            & ul {
+                list-style: none;
+            }
+            & a{
+                color: white;
+                text-decoration: none;
+            }
+            & p {
+                font-size: 1em;
+            }
+            & p::before{
+                content: ' - ';
+            }
+            & img {
+                width: 25px;
+            }   
             &-title{
                 font-size: 22px;
-                margin-bottom: 20px;
+                text-align: center;
             }
-            & > ul {
-                list-style: none;
-                & > a {
-                    color: white;
-                    text-decoration: none;
-                }
-            }
-
             &-insta{
+                padding: 10px;
                 position: relative;
-                &-img{
-                    width: 25px;
-                    position: absolute;
-                    left: 3px;
-                    top: 5px;
-                }
                 &-txt{
                     position: absolute;
-                    left: 35px;
-                    top: 10px;
-                }
-                &-txt::before{
-                    content: ' - ';
+                    top: 15px;
+                    left: 40px;
                 }
             }
-
             &-face{
+                padding: 10px;
                 position: relative;
-                &-img{
-                    width: 25px;
-                    position: absolute;
-                    left: 3px;
-                    top: 50px;
-                }
+                margin-bottom: 45px;
                 &-txt{
                     position: absolute;
-                    left: 35px;
-                    top: 56px;
-                }
-                &-txt::before{
-                    content: ' - ';
+                    top: 15px;
+                    left: 40px;
                 }
             }
         }
-
-        
-    }
-
-    .bloco2{
-        //width: 230px;
-        height: 640px;
-        //margin-left: 25px;
-        position: relative;
-
-        & h2{
-            font-size: 30px;
-            margin-bottom: 40px;
+        &__separacao{
+            width: 280px;
+            height: 1px;
+            margin: 0 auto;
+            background-color: black;
         }
-
-        & ul {
+    }
+    .bloco2{
+        padding-bottom: 100px;
+        & ul{
             list-style: none;
         }
-
-        & li {
-            margin-bottom: 20px;
-        }
-
         & a{
-            text-decoration: none;
             color: white;
-        }
-        & a::before{
-            content: '> ';
-            color: $cor4;
-        }
-
-        &__ajuda{
-            height: 250px;
-            position: absolute;
-            top: 300px;
-        }
-        
-        &__sobre{
-            //width: 140px;
-            height: 140px;
-            position: absolute;
-            top: 540px;
-            margin-top: 60px;
-        }
-
-        &__privacidade{
-            //width: 180px;
-            height: 140px;
-            position: absolute;
-            top: 725px;
-            margin-top: 60px;
-        }
-
-    }
-
-    .foot {
-        width: 100vw;
-        height: 20px;
-        background-color: $cor4;
-        font-size: 13px;
-        position: absolute;
-        top: 1330px;
-
-        & a{
             text-decoration: none;
-            color: white;
-            transition: all 200ms ease-in-out;
+            line-height: 35px;
         }
         & a:hover{
             text-decoration: underline;
-            opacity: 80%;
+        }
+        & li::before{
+            content: ' > ';
+            color: $cor4;
+        }
+        & h2{
+            margin-bottom: 40px;
+        }
+        &__ajuda{
+            width: 185px;
+            margin: 40px auto 60px auto;
+        }
+        &__sobre{
+            width: 185px;
+            margin: 0 auto 60px auto;
+        }
+        &__privacidade{
+            width: 185px;
+            margin: 0 auto 60px auto;
+        }
+    }
+    .foot{
+        background-color: $cor4;
+        & p{
+            font-size: 0.82em;
+            text-align: center;
+        }
+        & a{
+            color: white;
         }
     }
 }
