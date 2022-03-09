@@ -606,6 +606,7 @@ footer {
       content: ' > ';
       color: #4369D9; }
     footer .bloco2 h2 {
+      font-size: 1.5em;
       margin-bottom: 40px; }
     footer .bloco2__ajuda {
       width: 185px;
