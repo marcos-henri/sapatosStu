@@ -1,5 +1,6 @@
 .feminino{
     text-align: center;
+    height: 1970px;
 
     &__produtos-item{
         list-style: none;
@@ -52,6 +53,12 @@
 
     &__produtos-item-price{
         margin-bottom: 10px;
+    }
+    @media (max-width: $breakpoint-md){
+        .feminino__produtos-item{
+            
+        }
+        
     }
     
 }

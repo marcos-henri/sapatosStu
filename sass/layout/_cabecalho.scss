@@ -24,6 +24,9 @@
         position: absolute;
         top: 7px;
         right: 7px;
+        @media (max-width: $breakpoint-md) {
+            display: none;
+        }
     }
 
     &__lista{
@@ -40,6 +43,7 @@
         background-color: $cor4;
         border-radius: 5px;
         border: 1.5px solid $cor2;
+    
     }
 
     &__item-user > img{   

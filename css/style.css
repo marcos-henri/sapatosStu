@@ -342,6 +342,9 @@ template {
     position: absolute;
     top: 7px;
     right: 7px; }
+    @media (max-width: 768px) {
+      .cabecalho__btn {
+        display: none; } }
   .cabecalho__lista {
     display: none;
     list-style: none;
@@ -432,7 +435,8 @@ main {
       font-style: italic; }
 
 .feminino {
-  text-align: center; }
+  text-align: center;
+  height: 1970px; }
   .feminino__produtos-item {
     list-style: none; }
   .feminino__titulo {
