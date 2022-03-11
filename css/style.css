@@ -435,17 +435,21 @@ main {
       font-style: italic; }
 
 .feminino {
-  text-align: center;
-  height: 1970px; }
+  text-align: center; }
+  .feminino__produtos {
+    padding-top: 30px; }
+  .feminino .linha {
+    width: 300px;
+    margin: 0 auto;
+    background-color: black; }
+  .feminino .grid {
+    margin-top: 30px; }
   .feminino__produtos-item {
+    margin-top: 24px;
     list-style: none; }
   .feminino__titulo {
-    margin-top: 24px;
-    margin-bottom: 40px;
     font-size: 26px;
-    font-weight: bold;
-    border-bottom: 1.5px solid black;
-    border-top: 1.5px solid black; }
+    font-weight: bold; }
   .feminino__produtos-item {
     width: 200px;
     height: 300px;
@@ -472,18 +476,47 @@ main {
     margin-bottom: 4px; }
   .feminino__produtos-item-price {
     margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .feminino .grid {
+      padding: 80px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media (min-width: 992px) {
+    .feminino .grid {
+      padding: 100px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media (min-width: 1200px) {
+    .feminino .grid {
+      padding: 25px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+    .feminino .feminino__produtos-item {
+      margin: 24px 30px;
+      list-style: none; } }
 
 .masculino {
   text-align: center; }
+  .masculino__produtos {
+    padding-top: 20px; }
+  .masculino .linha {
+    width: 300px;
+    margin: 0 auto;
+    background-color: black; }
+  .masculino .grid {
+    margin-top: 30px; }
   .masculino__produtos-item {
+    margin-top: 24px;
     list-style: none; }
   .masculino__titulo {
-    margin-top: 24px;
-    margin-bottom: 40px;
     font-size: 26px;
-    font-weight: bold;
-    border-bottom: 1.5px solid black;
-    border-top: 1.5px solid black; }
+    font-weight: bold; }
   .masculino__produtos-item {
     width: 200px;
     height: 300px;
@@ -510,11 +543,37 @@ main {
     margin-bottom: 4px; }
   .masculino__produtos-item-price {
     margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .masculino .grid {
+      padding: 80px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media (min-width: 992px) {
+    .masculino .grid {
+      padding: 100px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media (min-width: 1200px) {
+    .masculino .grid {
+      padding: 25px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+    .masculino .masculino__produtos-item {
+      margin: 24px 30px;
+      list-style: none; } }
 
 footer {
   background-color: #333259;
   color: white;
-  font-family: "Trebuchet MS", serif; }
+  font-family: "Trebuchet MS", serif;
+  display: flex;
+  flex-direction: column; }
   footer .logo {
     padding-top: 25px;
     padding-bottom: 25px; }
@@ -523,80 +582,89 @@ footer {
       height: auto;
       display: block;
       margin: 0 auto; }
-  footer .bloco1__newsletter-title {
-    width: 220px;
-    font-size: 1.4em;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 10px; }
-  footer .bloco1__newsletter-subtitle {
-    font-size: 1em;
-    text-align: center;
-    padding-bottom: 20px; }
-  footer .bloco1__newsletter-input {
-    width: 240px;
-    height: 20px;
-    display: block;
-    margin: 0 auto 20px auto;
-    background-color: transparent;
-    border: 1px solid #1F1F26;
-    border-radius: 4px; }
-    footer .bloco1__newsletter-input::-webkit-input-placeholder {
+  footer .bloco1 {
+    display: flex;
+    flex-direction: column; }
+    footer .bloco1__newsletter-title {
+      font-size: 1.4em;
+      font-weight: bold;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 10px; }
+    footer .bloco1__newsletter-subtitle {
+      font-size: 1em;
+      text-align: center;
+      padding-bottom: 20px; }
+    footer .bloco1__newsletter-input {
+      width: 90%;
+      height: 40px;
+      display: block;
+      margin: 0 auto 20px auto;
+      background-color: transparent;
+      border: 1px solid #1F1F26;
+      border-radius: 6px;
+      color: white; }
+      footer .bloco1__newsletter-input::-webkit-input-placeholder {
+        color: white;
+        opacity: 40%;
+        font-style: italic;
+        text-align: center; }
+      footer .bloco1__newsletter-input::-moz-placeholder {
+        color: white;
+        opacity: 40%;
+        font-style: italic;
+        text-align: center; }
+    footer .bloco1__newsletter-btn-cad {
+      width: 125px;
+      height: 35px;
+      background-color: transparent;
+      border: 1px solid #1F1F26;
+      border-radius: 14px;
       color: white;
-      opacity: 35%;
       font-style: italic;
-      text-align: center; }
-    footer .bloco1__newsletter-input::-moz-placeholder {
-      color: white;
-      opacity: 35%;
-      font-style: italic;
-      text-align: center; }
-  footer .bloco1__newsletter-btn-cad {
-    width: 95px;
-    height: 35px;
-    background-color: transparent;
-    border: 1px solid #1F1F26;
-    border-radius: 14px;
-    color: white;
-    font-style: italic;
-    display: block;
-    margin: 0 auto 60px auto; }
-  footer .bloco1__redes ul {
-    list-style: none; }
-  footer .bloco1__redes a {
-    color: white;
-    text-decoration: none; }
-  footer .bloco1__redes p {
-    font-size: 1em; }
-  footer .bloco1__redes p::before {
-    content: ' - '; }
-  footer .bloco1__redes img {
-    width: 25px; }
-  footer .bloco1__redes-title {
-    font-size: 22px;
-    text-align: center; }
-  footer .bloco1__redes-insta {
-    padding: 10px;
-    position: relative; }
-    footer .bloco1__redes-insta-txt {
-      position: absolute;
-      top: 15px;
-      left: 40px; }
-  footer .bloco1__redes-face {
-    padding: 10px;
-    position: relative;
-    margin-bottom: 45px; }
-    footer .bloco1__redes-face-txt {
-      position: absolute;
-      top: 15px;
-      left: 40px; }
-  footer .bloco1__separacao {
-    width: 280px;
-    height: 1px;
-    margin: 0 auto;
-    background-color: black; }
+      display: block;
+      margin: 0 auto 60px auto; }
+    footer .bloco1__redes {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer .bloco1__redes ul {
+        list-style: none; }
+      footer .bloco1__redes a {
+        color: white;
+        text-decoration: none; }
+      footer .bloco1__redes p {
+        font-size: 1em; }
+      footer .bloco1__redes p::before {
+        content: ' - '; }
+      footer .bloco1__redes img {
+        width: 25px; }
+      footer .bloco1__redes-title {
+        font-size: 1.4em;
+        text-align: center; }
+      footer .bloco1__redes-insta {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        transition: all 150ms ease-in; }
+        footer .bloco1__redes-insta-txt {
+          margin-left: 5px; }
+      footer .bloco1__redes-insta:hover, footer .bloco1__redes-face:hover {
+        transform: scale(1.2); }
+      footer .bloco1__redes-face {
+        display: flex;
+        align-items: center;
+        margin-bottom: 45px;
+        transition: all 150ms ease-in; }
+        footer .bloco1__redes-face-txt {
+          margin-left: 5px; }
+    footer .bloco1 hr {
+      margin: 0 auto;
+      width: 200px; }
   footer .bloco2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 100px; }
     footer .bloco2 ul {
       list-style: none; }
@@ -611,16 +679,14 @@ footer {
       color: #4369D9; }
     footer .bloco2 h2 {
       font-size: 1.5em;
+      text-align: center;
       margin-bottom: 40px; }
     footer .bloco2__ajuda {
-      width: 185px;
-      margin: 40px auto 60px auto; }
+      margin-top: 45px; }
     footer .bloco2__sobre {
-      width: 185px;
-      margin: 0 auto 60px auto; }
+      margin-top: 45px; }
     footer .bloco2__privacidade {
-      width: 185px;
-      margin: 0 auto 60px auto; }
+      margin-top: 45px; }
   footer .foot {
     background-color: #4369D9; }
     footer .foot p {
@@ -628,3 +694,16 @@ footer {
       text-align: center; }
     footer .foot a {
       color: white; }
+  @media (min-width: 576px) {
+    footer .bloco2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 45px 35px;
+      padding-bottom: 0px; }
+      footer .bloco2__ajuda {
+        margin: 0; }
+      footer .bloco2__sobre {
+        margin: 0; }
+      footer .bloco2__privacidade {
+        margin: 0; } }

@@ -1,17 +1,26 @@
 .masculino{
     text-align: center;
 
+    &__produtos{
+        padding-top: 20px;
+    }
+    .linha{
+        width: 300px;
+        margin: 0 auto;
+        background-color: black;
+    }
+    .grid{
+        margin-top: 30px;
+    }
+
     &__produtos-item{
+        margin-top: 24px;
         list-style: none;
     }
 
     &__titulo{
-        margin-top: 24px;
-        margin-bottom: 40px;
         font-size: 26px;
         font-weight: bold;
-        border-bottom: 1.5px solid black;
-        border-top: 1.5px solid black;
     }
 
     &__produtos-item{
@@ -53,15 +62,37 @@
     &__produtos-item-price{
         margin-bottom: 10px;
     }
-
-    // &__produtos-item-more{
-    //     width: 200px;
-    //     height: 20px;
-    //     background-color: $cor1;
-    //     color: white;
-    //     border-radius: 4px;
-    //     position: absolute;
-    //     top: 240px;
-    //     transition: all 100ms ease;
-    // }
+    @media (min-width: $breakpoint-md){
+        .grid{
+            padding: 80px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    @media (min-width: $breakpoint-lg){
+        .grid{
+            padding: 100px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    @media (min-width: $breakpoint-xl){
+        .grid{
+            padding: 25px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .masculino{
+            &__produtos-item{
+                margin: 24px 30px;
+                list-style: none;
+            }
+        }
+    }
 }

@@ -3,7 +3,8 @@ footer{
     background-color: $cor0;
     color: white;
     font-family: $fonte0;
-    //position: relative;
+    display: flex;
+    flex-direction: column;
 
 
     .logo {
@@ -19,9 +20,10 @@ footer{
     }
 
     .bloco1{
+        display: flex;
+        flex-direction: column;
         &__newsletter{
             &-title{
-                width: 220px;
                 font-size: 1.4em;
                 font-weight: bold;
                 text-align: center;
@@ -34,29 +36,30 @@ footer{
                 padding-bottom: 20px;
             }
             &-input{
-                width: 240px;
-                height: 20px;
+                width: 90%;
+                height: 40px;
                 display: block;
                 margin: 0 auto 20px auto;
                 background-color: transparent;
                 border: 1px solid $cor2;
-                border-radius: 4px;
+                border-radius: 6px;
+                color: white;
                 
                 &::-webkit-input-placeholder{
                     color: white;
-                    opacity: 35%;
+                    opacity: 40%;
                     font-style: italic;
                     text-align: center;
                 }
                 &::-moz-placeholder{
                     color: white;
-                    opacity: 35%;
+                    opacity: 40%;
                     font-style: italic;
                     text-align: center;
                 }
             }
             &-btn-cad{
-                width: 95px;
+                width: 125px;
                 height: 35px;
                 background-color: transparent;
                 border: 1px solid $cor2;
@@ -68,6 +71,9 @@ footer{
             }
         }
         &__redes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             & ul {
                 list-style: none;
             }
@@ -85,37 +91,40 @@ footer{
                 width: 25px;
             }   
             &-title{
-                font-size: 22px;
+                font-size: 1.4em;
                 text-align: center;
             }
             &-insta{
-                padding: 10px;
-                position: relative;
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                transition: all 150ms ease-in;
                 &-txt{
-                    position: absolute;
-                    top: 15px;
-                    left: 40px;
+                    margin-left: 5px;
                 }
             }
+            &-insta:hover, &-face:hover{
+                transform: scale(1.2);
+            }
             &-face{
-                padding: 10px;
-                position: relative;
+                display: flex;
+                align-items: center;
                 margin-bottom: 45px;
+                transition: all 150ms ease-in;
                 &-txt{
-                    position: absolute;
-                    top: 15px;
-                    left: 40px;
+                    margin-left: 5px;
                 }
             }
         }
-        &__separacao{
-            width: 280px;
-            height: 1px;
+        hr{
             margin: 0 auto;
-            background-color: black;
+            width: 200px;
         }
     }
     .bloco2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-bottom: 100px;
         & ul{
             list-style: none;
@@ -134,19 +143,17 @@ footer{
         }
         & h2{
             font-size: 1.5em;
+            text-align: center;
             margin-bottom: 40px;
         }
         &__ajuda{
-            width: 185px;
-            margin: 40px auto 60px auto;
+            margin-top: 45px;
         }
         &__sobre{
-            width: 185px;
-            margin: 0 auto 60px auto;
+            margin-top: 45px;
         }
         &__privacidade{
-            width: 185px;
-            margin: 0 auto 60px auto;
+            margin-top: 45px;
         }
     }
     .foot{
@@ -157,6 +164,28 @@ footer{
         }
         & a{
             color: white;
+        }
+    }
+    @media (min-width: $breakpoint-sm){
+        .bloco2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 45px 35px;
+            padding-bottom: 0px;
+            &__ajuda{
+                // width: 185px;
+                margin: 0;
+            }
+            &__sobre{
+                // width: 185px;
+                margin: 0;
+            }
+            &__privacidade{
+                // width: 185px;
+                margin: 0;
+            }
+
         }
     }
 }
