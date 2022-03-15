@@ -623,7 +623,8 @@ footer {
       color: white;
       font-style: italic;
       display: block;
-      margin: 0 auto 60px auto; }
+      margin: 0 auto 60px auto;
+      cursor: pointer; }
     footer .bloco1__redes {
       display: flex;
       flex-direction: column;
@@ -666,6 +667,9 @@ footer {
     flex-direction: column;
     align-items: center;
     padding-bottom: 100px; }
+    footer .bloco2__infs {
+      display: flex;
+      flex-direction: column; }
     footer .bloco2 ul {
       list-style: none; }
     footer .bloco2 a {
@@ -679,7 +683,6 @@ footer {
       color: #4369D9; }
     footer .bloco2 h2 {
       font-size: 1.5em;
-      text-align: center;
       margin-bottom: 40px; }
     footer .bloco2__ajuda {
       margin-top: 45px; }
@@ -695,15 +698,13 @@ footer {
     footer .foot a {
       color: white; }
   @media (min-width: 576px) {
-    footer .bloco2 {
-      display: flex;
+    footer .bloco2__infs {
+      width: 98vw;
       flex-direction: row;
-      justify-content: space-between;
-      margin: 45px 35px;
-      padding-bottom: 0px; }
-      footer .bloco2__ajuda {
-        margin: 0; }
-      footer .bloco2__sobre {
-        margin: 0; }
-      footer .bloco2__privacidade {
-        margin: 0; } }
+      justify-content: space-around; } }
+  @media (min-width: 768px) {
+    footer .bloco1__newsletter-input {
+      width: 500px; }
+    footer .foot p {
+      padding: 5px;
+      font-size: 1em; } }
