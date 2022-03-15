@@ -166,9 +166,9 @@ footer{
             color: white;
         }
     }
-    @media (min-width: $breakpoint-sm){
+    @media (min-width: $breakpoint-md){
         .bloco2__infs{
-                width: 98vw;
+                width: 90vw;
                 flex-direction: row;
                 justify-content: space-around;
         }

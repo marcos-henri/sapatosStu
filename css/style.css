@@ -321,58 +321,72 @@ template {
   border-radius: 10px; }
 
 .cabecalho {
-  position: relative;
-  height: 100px;
+  display: flex;
+  height: 120px;
   background: #333259; }
-  .cabecalho .logo {
-    position: absolute;
-    top: 20px;
-    width: 250px;
+  .cabecalho__logo {
+    display: flex;
+    margin-left: 10px;
+    width: 300px;
     height: auto; }
+    .cabecalho__logo img {
+      width: 300px;
+      height: auto;
+      object-fit: contain; }
   .cabecalho__btn {
     display: block;
     width: 35px;
     height: 35px;
     background-color: #4369D9;
-    background: url("../../images/icones/menuprincipal-btn-bg.png");
-    background-repeat: no-repeat;
+    background: url("../../images/icones/menuprincipal-btn-bg.png") no-repeat;
     border: 1px solid #4369D9;
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
-    top: 7px;
-    right: 7px; }
-    @media (max-width: 768px) {
+    top: 5px;
+    right: 5px; }
+    @media (min-width: 768px) {
       .cabecalho__btn {
         display: none; } }
-  .cabecalho__lista {
-    display: none;
-    list-style: none;
+  .cabecalho__nav {
     position: absolute;
-    background-image: url("../../images/icones/menuprincipal-btn-bg.png");
-    background-repeat: no-repeat;
-    background-position: -53px 2px;
-    width: 35px;
-    height: 100px;
-    top: 7px;
-    right: 7px;
-    background-color: #4369D9;
-    border-radius: 5px;
-    border: 1.5px solid #1F1F26; }
+    right: 5px;
+    top: 5px; }
+    .cabecalho__nav__lista {
+      display: flex;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 35px;
+      width: 35px;
+      list-style: none;
+      background-image: url("../../images/icones/menuprincipal-btn-bg.png");
+      background-repeat: no-repeat;
+      background-position: -53px 2px;
+      background-color: #4369D9;
+      border-radius: 5px;
+      border: 1.5px solid #1F1F26; }
   .cabecalho__item-user > img {
     width: 25px;
     height: auto; }
-  .cabecalho__item-user {
-    position: absolute;
-    top: 35px;
-    left: 5px; }
   .cabecalho__item-sacola > img {
-    width: 25px;
+    width: 22px;
     height: auto; }
-  .cabecalho__item-sacola {
-    position: absolute;
-    top: 68px;
-    left: 5px; }
+  @media (min-width: 768px) {
+    .cabecalho .cabecalho__nav__lista {
+      width: 100px;
+      height: auto;
+      background: transparent;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+    .cabecalho .cabecalho__item-user > img {
+      width: 35px;
+      height: auto; }
+    .cabecalho .cabecalho__item-sacola > img {
+      width: 31px;
+      height: auto; } }
 
 main {
   font-family: "Trebuchet MS", serif;
@@ -380,42 +394,41 @@ main {
 
 .nav {
   position: relative;
+  display: flex;
   height: 50px;
   background-color: #302F40;
   color: white;
   font-family: "Trebuchet MS", serif;
   font-size: 1em; }
+  .nav__links {
+    display: flex;
+    align-items: center; }
+  .nav__promo {
+    margin-left: 10px;
+    margin-right: 10px; }
   .nav a {
-    position: absolute;
     color: white;
     text-decoration: none;
-    display: block;
     transition: all 150ms ease-in; }
   .nav a:hover {
     color: rgba(255, 255, 255, 0.712);
     text-decoration: underline; }
-  .nav__promo {
-    position: absolute;
-    top: 5px;
-    left: 3px; }
-  .nav__sapatos {
-    position: absolute;
-    top: 25px;
-    left: 3px; }
   .nav img {
-    width: 25px;
     position: absolute;
-    top: 12px;
-    right: 12px;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: auto;
     cursor: pointer;
     transition: all 100ms ease-in; }
-  .nav img:hover {
-    opacity: 70%; }
+    .nav img:hover {
+      opacity: 70%; }
   .nav__pesquisa {
     display: none;
-    position: relative;
+    position: absolute;
+    right: 5px;
+    top: 15px;
     height: 50px;
-    background-color: #302F40;
     color: white; }
     .nav__pesquisa__input {
       background-color: #302F40;
@@ -423,9 +436,6 @@ main {
       border-bottom: 1px solid white;
       font-family: "Trebuchet MS", serif; }
     .nav__pesquisa #search-product {
-      position: absolute;
-      top: 25px;
-      left: 5px;
       width: 270px; }
     .nav__pesquisa #search-product::-webkit-input-placeholder {
       font-family: "Trebuchet MS", serif;
@@ -697,9 +707,9 @@ footer {
       text-align: center; }
     footer .foot a {
       color: white; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     footer .bloco2__infs {
-      width: 98vw;
+      width: 90vw;
       flex-direction: row;
       justify-content: space-around; } }
   @media (min-width: 768px) {

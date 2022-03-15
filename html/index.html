@@ -10,10 +10,12 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img class="logo" src="../images/logo/branco.png" alt="Logo Sapatos Stu">
+        <div class="cabecalho__logo">
+            <img src="../images/logo/branco.png" alt="Logo Sapatos Stu">
+        </div>
         <nav class="cabecalho__nav">
             <button class="cabecalho__btn"></button>
-            <ul class="cabecalho__lista cabecalho__lista--fechado">
+            <ul class="cabecalho__nav__lista--fechado cabecalho__nav__lista">
                 <li>
                     <a class="cabecalho__item-user" href="#">
                         <img src="../images/icones/user-icon.png" alt="Acessar conta">
@@ -28,9 +30,13 @@
         </nav>
     </header>
     <nav class="nav">
-        <a class="nav__promo" href="#">Promoções</a>
-        <a class="nav__sapatos" href="#">Sapatos</a>
-        <img class="nav__img" src="../images/icones/lupa-w.png" alt="Pesquisar">
+        <div class="nav__links">
+            <a class="nav__promo" href="#">Promoções</a>
+            <a class="nav__sapatos" href="#">Sapatos</a>
+        </div>
+        <div class="nav__img">
+            <img src="../images/icones/lupa-w.png" alt="Pesquisar">
+        </div>
         <div class="nav__pesquisa">
             <input type="search" name="pesquisar" class="nav__pesquisa__input"  id="search-product" placeholder="Pesquisar...">
             <submit><img class="nav__pesquisa-img" src="../images/icones/lupa-w.png" alt="Pesquisar"></submit>
