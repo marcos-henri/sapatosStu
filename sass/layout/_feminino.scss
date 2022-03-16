@@ -1,9 +1,54 @@
 .feminino{
     text-align: center;
+    &__titulo{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        font-size: 1.8em;
+        font-weight: bold;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
     &__produtos{
         padding-top: 30px;
+        &-item{
+            margin-top: 24px;
+            list-style: none;
+            width: 200px;
+            height: 300px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        &-btn{
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 100ms ease-in;
+            position: relative;
+        }
+        &-btn:hover{
+            transform: scale(1.3);
+            border-radius: 20px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+        &-btn > img{
+            transition: all 100ms ease-in-out;
+        }
+        &-btn > img:hover{
+            transform: scale(0.9);
+            border-radius: 10px;
+        }
+        &-item-name{
+            font-size: 25px;
+            margin-bottom: 4px;
+        }
+        &-item-price{
+            margin-bottom: 10px;
+        }
     }
     .linha{
+        display: block;
         width: 300px;
         margin: 0 auto;
         background-color: black;
@@ -12,55 +57,7 @@
         margin-top: 30px;
     }
 
-    &__produtos-item{
-        margin-top: 24px;
-        list-style: none;
-    }
-
-    &__titulo{
-        font-size: 26px;
-        font-weight: bold;
-    }
-
-    &__produtos-item{
-        width: 200px;
-        height: 300px;
-        margin: auto;
-        margin-bottom: 30px;
-    }
     
-    &__produtos-btn{
-        background-color: white;
-        border: none;
-        cursor: pointer;
-        transition: all 100ms ease-in;
-        position: relative;
-    }
-
-    &__produtos-btn:hover{
-        transform: scale(1.3);
-        background-color: $cor1-trans;
-        border-radius: 20px;
-        border: none;
-    }
-
-    &__produtos-btn > img{
-        transition: all 100ms ease-in-out;
-    }
-
-    &__produtos-btn > img:hover{
-        transform: scale(0.9);
-        border-radius: 10px;
-    }
-
-    &__produtos-item-name{
-        font-size: 25px;
-        margin-bottom: 4px;
-    }
-
-    &__produtos-item-price{
-        margin-bottom: 10px;
-    }
     @media (min-width: $breakpoint-md){
         .grid{
             padding: 80px;
@@ -94,4 +91,4 @@
             }
         }
     }
-}   
+}

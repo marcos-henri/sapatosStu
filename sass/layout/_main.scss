@@ -1,4 +1,8 @@
 main {
     font-family: $fonte0;
     font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

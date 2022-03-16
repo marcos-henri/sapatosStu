@@ -1,0 +1,74 @@
+.aside{
+    display: flex;
+    //display: none;
+    flex-direction: column;
+    a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        color: $cor2;
+        line-height: 20px;
+    }
+    a:hover{
+        font-weight: bold;
+    }
+    input, p{
+        display: inline;
+        margin-right: 5px;
+    }
+    &__genero{
+
+    }
+    @media (min-width: $breakpoint-md){   
+        &__genero{
+            border-bottom: 1px solid $cor3;
+            border-top: 1px solid $cor3;
+            padding-bottom: 10px;
+            &-title{
+                font-size: 1.5em;
+                text-align: center;
+            }
+            p{
+                margin-left: 5px;
+                line-height: 20px;
+            }
+        }
+        &__tamanho{
+            border-bottom: 1px solid $cor3;
+            padding-bottom: 20px;
+            &-form{
+                height: 200px;
+                overflow-y: scroll;
+            }
+            a{
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+                align-items: center;
+            }
+            #checkbox, p{
+                display: inline;
+                margin-right: 5px;
+            }
+        }
+        &__preço{
+            border-bottom: 1px solid $cor3;
+            padding-bottom: 20px;
+            a{
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+                align-items: center;
+            }
+            #price, p{
+                display: inline;
+            }
+            #price{
+                margin-right: 5px;
+            }
+        }
+    }
+    
+    
+}
