@@ -508,7 +508,7 @@ footer {
       color: white;
       font-style: italic;
       display: block;
-      margin: 0 auto 60px auto;
+      margin: 0 auto 30px auto;
       cursor: pointer; }
     footer .bloco1__redes {
       display: flex;
@@ -568,13 +568,9 @@ footer {
       color: #4369D9; }
     footer .bloco2 h2 {
       font-size: 1.5em;
-      margin-bottom: 40px; }
-    footer .bloco2__ajuda {
-      margin-top: 45px; }
-    footer .bloco2__sobre {
-      margin-top: 45px; }
-    footer .bloco2__privacidade {
-      margin-top: 45px; }
+      margin-bottom: 5px; }
+    footer .bloco2__ajuda, footer .bloco2__sobre, footer .bloco2__privacidade {
+      margin-top: 30px; }
   footer .foot {
     background-color: #4369D9; }
     footer .foot p {

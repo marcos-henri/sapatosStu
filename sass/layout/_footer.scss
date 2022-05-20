@@ -61,7 +61,7 @@ footer{
                 color: white;
                 font-style: italic;
                 display: block;
-                margin: 0 auto 60px auto;
+                margin: 0 auto 30px auto;
                 cursor: pointer;
             }
         }
@@ -142,16 +142,12 @@ footer{
         }
         & h2{
             font-size: 1.5em;
-            margin-bottom: 40px;
+            margin-bottom: 5px;
         }
-        &__ajuda{
-            margin-top: 45px;
-        }
-        &__sobre{
-            margin-top: 45px;
-        }
+        &__ajuda,
+        &__sobre,
         &__privacidade{
-            margin-top: 45px;
+            margin-top: 30px;
         }
     }
     .foot{
