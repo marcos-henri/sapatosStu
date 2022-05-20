@@ -1,36 +1,31 @@
-.feminino{
-    text-align: center;
+.fem{
     &__titulo{
-        display: block;
-        width: 300px;
-        margin: 0 auto;
         font-size: 1.8em;
-        font-weight: bold;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        margin: 24px 0 40px 0;
+        text-align: center;
     }
-    &__produtos{
-        padding-top: 30px;
+    &__produtos{   
+        &-list{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         &-item{
-            margin-top: 24px;
-            list-style: none;
             width: 200px;
-            height: 300px;
-            margin: auto;
-            margin-bottom: 30px;
+            height: 260px;
+            margin-bottom: 50px;
+            justify-self: center;
         }
         &-btn{
             background-color: white;
-            border: none;
             cursor: pointer;
             transition: all 100ms ease-in;
-            position: relative;
         }
         &-btn:hover{
             transform: scale(1.3);
             border-radius: 20px;
-            border-left: 1px solid black;
-            border-right: 1px solid black;
         }
         &-btn > img{
             transition: all 100ms ease-in-out;
@@ -47,48 +42,23 @@
             margin-bottom: 10px;
         }
     }
-    .linha{
-        display: block;
-        width: 300px;
-        margin: 0 auto;
-        background-color: black;
-    }
-    .grid{
-        margin-top: 30px;
-    }
-
-    
-    @media (min-width: $breakpoint-md){
-        .grid{
-            padding: 80px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+    @media (min-width: 450px){
+        .fem__produtos-list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
         }
     }
-    @media (min-width: $breakpoint-lg){
-        .grid{
-            padding: 100px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+    @media (min-width: $breakpoint-md){
+        .fem__produtos-list{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
         }
     }
     @media (min-width: $breakpoint-xl){
-        .grid{
-            padding: 25px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .feminino{
-            &__produtos-item{
-                margin: 24px 30px;
-                list-style: none;
-            }
+        .fem__produtos-list{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
         }
     }
 }
