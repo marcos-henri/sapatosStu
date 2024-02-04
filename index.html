@@ -7,18 +7,32 @@
     <link rel="stylesheet" href="./sass/style.css">
 </head>
 <body>
-    <header>
-        <img id="header-img-logo" src="images/logo/branco.png" alt="Logo branca">
-        <buttuon id="header-btn-sacola" class="header-btn">
-            <img src="images/icones/sacola.png" alt="Sacola">
-        </buttuon>
-        <button id="header-btn-user" class="header-btn">
-            <img src="images/icones/user-icon.png" alt="Usuário">
-        </button>
+    <header id="header">
+        <a href="index.html" id="header-img">
+            <img id="header-img-logo" src="images/logo/branco.png" alt="Logo branca">
+        </a>
+        <ul id="header-btns">
+            <li id="header-btns-sacola" class="header-btns-item">
+                <a href="#">
+                    <img src="images/icones/sacola.png" alt="Sacola">
+                </a>
+            </li>
+            <li id="header-btns-user" class="header-btns-item">
+                <a href="#">
+                    <img src="images/icones/user-icon.png" alt="Usuário">
+                </a>
+            </li>
+        </ul>
     </header>
-    <nav>
-        <a href="#" id="nav-promocoes">Promoções</a>
-        <a href="#" id="nav-sapatos">Sapatos</a>
+    <nav id="nav">
+        <ul id="nav-opcoes">
+            <li id="nav-opcoes-promocoes">
+                <a href="#">Promoções</a>
+            </li>
+            <li id="nav-opcoes-sapatos">
+                <a href="#">Sapatos</a>
+            </li>
+        </ul>
         <button id="nav-btn-pesquisar">
             <img src="images/icones/lupa-w.png" alt="Pesquisar">
         </button>
@@ -80,8 +94,6 @@
             </ul>
         </div>
     </footer>
-    <div id="foot">
-        <p>Protótipo de site criado por - <a href="https://github.com/marcos-henri">Marcos Henrique</a></p>
-    </div>
+    <p id="foot">Protótipo de site criado por - <a href="https://github.com/marcos-henri">Marcos Henrique</a></p>
 </body>
 </html>

@@ -328,6 +328,49 @@ button {
   border: none;
 }
 
-header {
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+#header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 28px;
   background-color: #333259;
+}
+#header-img {
+  display: block;
+  width: 75%;
+}
+#header-btns {
+  display: flex;
+  flex-direction: column;
+}
+#header-btns-btns-sacola {
+  margin-bottom: 10px;
+}
+
+.header-btns-item {
+  width: 30px;
+}
+
+#nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 27px;
+  background-color: #302F40;
+}
+#nav-opcoes {
+  display: flex;
+  flex-direction: row;
+}
+#nav-btn-pesquisar {
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */

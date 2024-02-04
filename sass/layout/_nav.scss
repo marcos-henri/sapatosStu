@@ -1,0 +1,14 @@
+#nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 27px;
+    background-color: $cor1;
+    &-opcoes{
+        display: flex;
+        flex-direction: row;
+    }
+    &-btn-pesquisar{
+        background-color: transparent;
+    }
+}
