@@ -330,6 +330,7 @@ button {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 img {
@@ -360,17 +361,48 @@ img {
   width: 30px;
 }
 
+#main {
+  width: 86%;
+  margin: auto;
+}
+#main-banner {
+  width: 335px;
+  margin-bottom: 40px;
+}
+#main-feminino {
+  margin-bottom: 40px;
+}
+#main-masculino {
+  margin-bottom: 100px;
+}
+
+.main-item {
+  text-align: center;
+  color: #302F40;
+  font-size: 24px;
+}
+
 #nav {
   height: 50px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 17px 27px;
+  margin-bottom: 30px;
   background-color: #302F40;
 }
 #nav-opcoes {
   display: flex;
   flex-direction: row;
 }
+#nav-opcoes-promocoes {
+  margin-right: 25px;
+}
 #nav-btn-pesquisar {
   background-color: transparent;
+}
+
+.nav-opcoes-item {
+  color: #fff;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */

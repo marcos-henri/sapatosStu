@@ -1,14 +1,23 @@
 #nav{
     height: 50px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 17px 27px;
+    margin-bottom: 30px;
     background-color: $cor1;
     &-opcoes{
         display: flex;
         flex-direction: row;
+        &-promocoes{
+            margin-right: 25px;
+        }
     }
     &-btn-pesquisar{
         background-color: transparent;
     }
+}
+.nav-opcoes-item{
+    color: $cor5;
+    font-size: $tam1;
 }

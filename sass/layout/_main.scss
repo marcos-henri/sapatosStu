@@ -1,0 +1,19 @@
+#main{
+    width: 86%;
+    margin: auto;
+    &-banner{
+        width: 335px;
+        margin-bottom: 40px;
+    }
+    &-feminino{
+        margin-bottom: 40px;
+    }
+    &-masculino{
+        margin-bottom: 100px;
+    }
+}
+.main-item{
+    text-align: center;
+    color: $cor1;
+    font-size: $tam3;
+}
