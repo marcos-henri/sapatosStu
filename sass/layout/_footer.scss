@@ -1,0 +1,28 @@
+#footer{
+    background-color: $cor0;
+    color: $cor5;
+    padding: 30px 25px;
+    &-bloco1{
+        &-p1{
+            margin: 15px 0;
+            font-size: $tam2;
+        }
+        &-p2{
+            margin-bottom: 30px;
+            font-size: $tam1;
+        }
+        &-form{
+            &-inputbtn{
+                width: 78px;
+                height: 36px;
+                margin-left: 6px;
+                background-color: $cor4;
+                border: none;
+                border-radius: 12px;
+                color: $cor5;
+                font-size: $tam0;
+                font-style: italic;
+            }
+        }
+    }
+}

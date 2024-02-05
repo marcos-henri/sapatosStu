@@ -337,6 +337,15 @@ img {
   width: 100%;
 }
 
+.input-txt {
+  width: 250px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid #1F1F26;
+  border-radius: 12px;
+  padding-left: 10px;
+}
+
 #header {
   height: 100px;
   display: flex;
@@ -405,4 +414,29 @@ img {
 .nav-opcoes-item {
   color: #fff;
   font-size: 15px;
+}
+
+#footer {
+  background-color: #333259;
+  color: #fff;
+  padding: 30px 25px;
+}
+#footer-bloco1-p1 {
+  margin: 15px 0;
+  font-size: 18px;
+}
+#footer-bloco1-p2 {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+#footer-bloco1-form-inputbtn {
+  width: 78px;
+  height: 36px;
+  margin-left: 6px;
+  background-color: #4369D9;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */
